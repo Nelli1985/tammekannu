@@ -1,0 +1,148 @@
+/*
+Theme Name: Tammekannu
+Author: Sandra Õnne, Kadi Kerner, Rain Kütt, Ave Kõrve-Noorkõiv, Andres Soop, Nelli Vassila
+Description: Template for Tammekännu
+Version: 0.0.1
+Tags: bootstrap, tammekannu, lifland
+*/
+
+/*
+ * Globals
+ */
+
+ body {
+    background-color: #594e3d;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-family: "Uncial Antiqua", cursive;
+    font-size:25px;
+    font-weight: normal;
+  }
+  
+  
+  /*
+   * Override Bootstrap's default container.
+   */
+  
+  @media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+
+    h1 {
+        font-size:40px;
+    }
+  }
+  /* mobile screen css */
+  @media (min-width: 300px){
+    p {
+        font-size: 1em;
+    }
+
+    .blog-description {
+        padding: 1em;
+    }
+  }
+   
+  
+  
+  /*
+   * Masthead for nav
+   */
+  
+  .blog-masthead {
+    color: #e75727;
+  }
+  
+  /* Nav links */
+  .blog-nav-item li {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    font-family: 'Uncial Antiqua', cursive;
+    padding-right: 15px;
+    color: #53bc67;
+  }
+  .blog-nav li a {
+    color: #53bc67;
+  }
+  .blog-nav-item:hover,
+  .blog-nav-item:active {
+    color: #b0f9ac;
+    text-decoration: none;
+  }
+  
+  /* Active state gets a caret at the bottom */
+  .blog-nav .active {
+    color: #b0f9ac;
+  }
+  .blog-nav .active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid;
+    border-left: 5px solid transparent;
+  }
+  
+  
+  /*
+   * Blog name and description
+   */
+  
+  .blog-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .blog-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: "Uncial Antiqua", cursive;
+    color: #b0f9ac;
+  }
+  .blog-description {
+    font-size: 20px;
+    background-color: #cebaa3;
+    color : #594E3D;
+    padding: 3em;
+  }
+  
+  /*
+   * Footer
+   */
+  
+  .blog-footer {
+    padding: 40px 0;
+  }
+
+  .green {
+    border-left: 6px solid #53bc67;
+  }
+
+  .footer-link {
+    color: #53bc67;
+    text-align: center;
+  }
+  .footer-link:hover,
+  .footer-link:active {
+    color: #b0f9ac;
+    text-decoration: none;
+  }
